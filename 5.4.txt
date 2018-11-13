@@ -1,0 +1,10 @@
+5.4
+
+Explain what the following code does: ((n & (n-1)) == 0).
+
+
+This code tests whether n is a power of 2 by ANDing it with 
+n - 1 and checking to see that no bits are set. This works 
+because if n is a power of 2, its most significant bit will be 1
+and all of its other bits will be 0 while n - 1 will be all ones.
+ANDing these together results in 0 bits set.
