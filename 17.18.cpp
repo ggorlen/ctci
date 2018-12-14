@@ -17,9 +17,9 @@
 #include <vector>
 
 std::pair<int, int> shortest_supersequence(std::vector<int> &shorter, std::vector<int> &longer) {
-    int lo = 0, hi = 0, unique_count = 0;
+    unsigned int lo = 0, hi = 0, unique_count = 0;
     std::unordered_map<int, int> counts;
-    std::pair<int, int> best{0, std::numeric_limits<int>::max()};
+    std::pair<unsigned int, unsigned int> best{0, std::numeric_limits<int>::max()};
 
     for (int i : shorter) {
         counts[i] = 0;
